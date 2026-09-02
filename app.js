@@ -347,7 +347,7 @@
       'DTSTAMP:' + z(new Date()), 'DTSTART:' + z(start), 'DTEND:' + z(end),
       'SUMMARY:Poda Barbers — ' + state.service.name,
       'DESCRIPTION:Appointment at Poda Barbers. Ref ' + (state.ref || '') + '. Call 01273 568126 to change.',
-      'LOCATION:Poda Barbers, Hove, East Sussex', 'END:VEVENT', 'END:VCALENDAR'
+      'LOCATION:Poda Barbers, Unit 2, 1 The Drive, Hove BN3 3JE', 'END:VEVENT', 'END:VCALENDAR'
     ].join('\r\n');
     var blob = new Blob([ics], { type: 'text/calendar' });
     var a = document.createElement('a');
