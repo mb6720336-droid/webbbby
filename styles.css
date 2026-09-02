@@ -105,8 +105,12 @@ a:hover { color: var(--red-3); }
 .hero-bg {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(900px 500px at 88% -12%, var(--red-tint), transparent 62%),
-    repeating-linear-gradient(-45deg, rgba(201,56,45,.035) 0, rgba(201,56,45,.035) 2px, transparent 2px, transparent 26px);
+    linear-gradient(103deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.90) 32%, rgba(255,255,255,.66) 56%, rgba(255,255,255,.40) 100%),
+    url('assets/shopfront.jpg') center 42% / cover no-repeat;
+}
+.hero-bg::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(800px 460px at 90% -14%, rgba(201,56,45,.10), transparent 60%);
 }
 .hero-inner {
   position: relative; display: grid; grid-template-columns: 1.35fr .9fr;
@@ -371,6 +375,9 @@ a:hover { color: var(--red-3); }
    ============================================================ */
 @media (max-width: 960px) {
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-bg { background:
+    linear-gradient(180deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.86) 48%, rgba(255,255,255,.72) 100%),
+    url('assets/shopfront.jpg') center 30% / cover no-repeat; }
   .quickbook { max-width: 460px; }
   .mirror-row { grid-template-columns: repeat(2, 1fr); gap: 20px 24px; }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
