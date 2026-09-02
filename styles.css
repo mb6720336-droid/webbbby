@@ -105,37 +105,36 @@ a:hover { color: var(--red-3); }
 .hero-bg {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    linear-gradient(103deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.90) 32%, rgba(255,255,255,.66) 56%, rgba(255,255,255,.40) 100%),
+    linear-gradient(100deg, rgba(16,11,10,.66) 0%, rgba(16,11,10,.42) 34%, rgba(16,11,10,.14) 60%, rgba(16,11,10,0) 100%),
     url('assets/shopfront.jpg') center 42% / cover no-repeat;
-}
-.hero-bg::after {
-  content: ""; position: absolute; inset: 0;
-  background: radial-gradient(800px 460px at 90% -14%, rgba(201,56,45,.10), transparent 60%);
 }
 .hero-inner {
   position: relative; padding: 88px 24px 104px;
 }
 .hero-copy { max-width: 500px; }
+.hero-copy .eyebrow { text-shadow: 0 1px 10px rgba(0,0,0,.45); }
 .hero-title {
   font-family: var(--serif); font-weight: 700;
   font-size: clamp(2.1rem, 4.4vw, 3.3rem); line-height: 1.06;
-  letter-spacing: -.3px; margin: 0 0 18px; color: var(--ink);
+  letter-spacing: -.3px; margin: 0 0 18px; color: #fff;
+  text-shadow: 0 2px 18px rgba(0,0,0,.42);
 }
-.hero-title em { font-style: italic; color: var(--red); font-weight: 600; }
-.hero-lead { font-size: 1rem; color: var(--ink-2); margin: 0 0 20px; max-width: 440px; }
-.hero-rating { display: flex; align-items: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; color: var(--ink-2); font-size: .88rem; }
-.hero-rating .stars { font-size: 1rem; }
+.hero-title em { font-style: italic; color: #ff7063; font-weight: 600; }
+.hero-lead { font-size: 1.05rem; color: rgba(255,255,255,.94); margin: 0 0 20px; max-width: 440px; text-shadow: 0 1px 12px rgba(0,0,0,.42); }
+.hero-rating { display: flex; align-items: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; color: rgba(255,255,255,.9); font-size: .88rem; text-shadow: 0 1px 10px rgba(0,0,0,.42); }
+.hero-rating .stars { font-size: 1rem; color: #ff7063; }
 .hero-actions { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
 .btn-book-hero {
-  background: transparent; color: var(--ink); border: 1.5px solid var(--red);
+  background: rgba(255,255,255,.06); color: #fff; border: 1.5px solid rgba(255,255,255,.85);
   border-radius: 3px; letter-spacing: 3px; padding: 16px 36px; font-size: .8rem;
+  backdrop-filter: blur(2px);
 }
-.btn-book-hero:hover { background: var(--red); color: #fff; }
+.btn-book-hero:hover { background: var(--red); color: #fff; border-color: var(--red); }
 .hero-menu-link {
   font-size: .76rem; letter-spacing: 2px; text-transform: uppercase;
-  color: var(--ink-2); font-weight: 500;
+  color: rgba(255,255,255,.88); font-weight: 500; text-shadow: 0 1px 10px rgba(0,0,0,.42);
 }
-.hero-menu-link:hover { color: var(--red); }
+.hero-menu-link:hover { color: #ff7063; }
 
 /* Quick Book card */
 .quickbook {
@@ -385,7 +384,7 @@ a:hover { color: var(--red-3); }
 @media (max-width: 960px) {
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero-bg { background:
-    linear-gradient(180deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.86) 48%, rgba(255,255,255,.72) 100%),
+    linear-gradient(180deg, rgba(16,11,10,.34) 0%, rgba(16,11,10,.52) 55%, rgba(16,11,10,.66) 100%),
     url('assets/shopfront.jpg') center 30% / cover no-repeat; }
   .quickbook { max-width: 460px; }
   .mirror-row { grid-template-columns: repeat(2, 1fr); gap: 20px 24px; }
