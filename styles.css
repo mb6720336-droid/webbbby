@@ -105,13 +105,13 @@ a:hover { color: var(--red-3); }
 .hero-bg {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    linear-gradient(100deg, rgba(16,11,10,.66) 0%, rgba(16,11,10,.42) 34%, rgba(16,11,10,.14) 60%, rgba(16,11,10,0) 100%),
+    radial-gradient(120% 90% at 50% 46%, rgba(16,11,10,.58) 0%, rgba(16,11,10,.40) 42%, rgba(16,11,10,.18) 72%, rgba(16,11,10,.06) 100%),
     url('assets/shopfront.jpg') center 42% / cover no-repeat;
 }
 .hero-inner {
   position: relative; padding: 88px 24px 104px;
 }
-.hero-copy { max-width: 500px; }
+.hero-copy { max-width: 620px; margin: 0 auto; text-align: center; }
 .hero-copy .eyebrow { text-shadow: 0 1px 10px rgba(0,0,0,.45); }
 .hero-title {
   font-family: var(--serif); font-weight: 700;
@@ -120,10 +120,10 @@ a:hover { color: var(--red-3); }
   text-shadow: 0 2px 18px rgba(0,0,0,.42);
 }
 .hero-title em { font-style: italic; color: #ff7063; font-weight: 600; }
-.hero-lead { font-size: 1.05rem; color: rgba(255,255,255,.94); margin: 0 0 20px; max-width: 440px; text-shadow: 0 1px 12px rgba(0,0,0,.42); }
-.hero-rating { display: flex; align-items: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; color: rgba(255,255,255,.9); font-size: .88rem; text-shadow: 0 1px 10px rgba(0,0,0,.42); }
+.hero-lead { font-size: 1.05rem; color: rgba(255,255,255,.94); margin: 0 auto 20px; max-width: 440px; text-shadow: 0 1px 12px rgba(0,0,0,.42); }
+.hero-rating { display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; color: rgba(255,255,255,.9); font-size: .88rem; text-shadow: 0 1px 10px rgba(0,0,0,.42); }
 .hero-rating .stars { font-size: 1rem; color: #ff7063; }
-.hero-actions { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
+.hero-actions { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; align-items: center; }
 .btn-book-hero {
   background: rgba(255,255,255,.06); color: #fff; border: 1.5px solid rgba(255,255,255,.85);
   border-radius: 3px; letter-spacing: 3px; padding: 16px 36px; font-size: .8rem;
