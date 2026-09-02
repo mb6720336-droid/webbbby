@@ -1,0 +1,11 @@
+# Poda Barbers — static site deploy config
+# No build step: the site is plain HTML/CSS/JS served from the repo root.
+[build]
+  publish = "."
+  command = ""
+
+# Send visitors to a clean 404 fallback (there's a single page, so serve index).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
